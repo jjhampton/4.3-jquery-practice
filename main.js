@@ -83,7 +83,7 @@
         ]
       },
       {
-        "name": "Sign Out"  
+        "name": "Sign Out"
       }
     ];
   }
