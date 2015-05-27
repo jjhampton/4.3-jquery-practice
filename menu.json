@@ -16,11 +16,11 @@
         "count": 366
       },
       {
-        "name": "Dropbox",
+        "name": "USB Drive",
         "count": 1
       },
       {
-        "name": "Skydrive",
+        "name": "Hard Drive",
         "count": 10
       }
     ]
@@ -68,15 +68,15 @@
         "count": 9
       },
       {
-        "name": "Connect",
+        "name": "Social",
         "count": 5
       },
       {
-        "name": "Profiles",
+        "name": "Settings",
         "count": 10
       },
       {
-        "name": "Options",
+        "name": "Server",
         "count": 6
       }
     ]
