@@ -24,7 +24,7 @@ body {
 
 .container {
   margin:  100px auto;
-  height: 340px;
+  //height: 340px;
   width: 260px;
   border: 1px solid #fff;
   outline: 1px solid #999999;
@@ -39,26 +39,49 @@ body {
   background: -webkit-linear-gradient(#4b4d50, #797a7f);
 }
 
+.subdirectory {
+  list-style: none;
+  height: 33px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: $dark-gray;
+  background-color: $very-light-gray;
+  border-bottom: 1px solid $medium-gray;
+}
+
 .directory-logo,
-.directory-value {
+.directory-value,
+.subdirectory-index,
+.subdirectory-value {
   display: inline-block;
   margin-left: 13px;
-  margin-right: 13px;position: relative;
+  margin-right: 13px;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.directory-logo {
+.directory-logo,
+.subdirectory-index {
   float: left;
 }
 
-.directory-logo i {
+.directory-logo i,
+.subdirectory-index span:first-child {
   margin-right: 13px;
 }
 
 .directory-value {
   float: right;
   background-color: rgba(0,0,0,0.3);
+  border-radius: 35%;
+  padding: 6px;
+  text-align: center;
+}
+
+.subdirectory-value {
+  float: right;
+  border: 1px solid $medium-gray;
   border-radius: 35%;
   padding: 6px;
   text-align: center;
