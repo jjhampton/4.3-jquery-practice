@@ -43,13 +43,6 @@
       $(event.target).nextUntil(".directory").slideToggle( "slow", function() {
       });
     });
-
-
-    // $("li").each(renderSubdirectory);
-
-    _.each(menu, function(directory) {
-      console.log(directory);
-    });
   }
 
 
