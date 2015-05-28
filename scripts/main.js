@@ -34,17 +34,15 @@
 
     $('.directory').each(function(index) {
       $(this).after(JST['subdirectories']({
-        directory: menu[index]
+        directory: menu[index],
       }));
     });
 
-    $(".directory").on("click", function() {
-      console.log("click handler called");
-      $(".subdirectory").slideToggle( "slow", function() {
+    $(".directory").on("click", function(event) {
+      console.log(event.target);
+      $(event.target).nextUntil(".directory").slideToggle( "slow", function() {
+      });
     });
-
-
-});
 
 
     // $("li").each(renderSubdirectory);
