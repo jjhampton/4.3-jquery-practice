@@ -32,7 +32,14 @@
       menu: menu
     }));
 
-    _.each(menu, renderDirectory);
+    $('.directory').each(function(index) {
+      $(this).after(JST['subdirectories']({
+        directory: menu[index].subdirectories
+      }));
+    });
+
+
+    // $("li").each(renderSubdirectory);
 
     _.each(menu, function(directory) {
       console.log(directory);
@@ -41,11 +48,14 @@
 
 
 
-  function renderDirectory(directory) {
+  function getSubdirectory(index, array) {
     $('.directory').after(JST['subdirectory']({
-      directory: directory
+      index: "0" + (index + 1),
+      name: subdirectory.name,
+      count: subdirectory.count
     }));
   }
+  //{{#each directory.subdirectories}}
 
 
 })();
