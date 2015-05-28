@@ -34,9 +34,17 @@
 
     $('.directory').each(function(index) {
       $(this).after(JST['subdirectories']({
-        directory: menu[index].subdirectories
+        directory: menu[index]
       }));
     });
+
+    $(".directory").on("click", function() {
+      console.log("click handler called");
+      $(".subdirectory").slideToggle( "slow", function() {
+    });
+
+
+});
 
 
     // $("li").each(renderSubdirectory);
@@ -48,14 +56,7 @@
 
 
 
-  function getSubdirectory(index, array) {
-    $('.directory').after(JST['subdirectory']({
-      index: "0" + (index + 1),
-      name: subdirectory.name,
-      count: subdirectory.count
-    }));
-  }
-  //{{#each directory.subdirectories}}
+
 
 
 })();
