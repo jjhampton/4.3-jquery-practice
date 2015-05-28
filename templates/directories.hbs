@@ -1,6 +1,9 @@
 {{#each menu}}
   <li class="directory">
     <div class="directory-logo">{{{icon}}}<span>{{name}}</span></div>
-    <div class="directory-value"><p>{{getCountTotal this}}<p></div>
+    <div class="directory-value"><p>{{getCountTotal this}}</p></div>
   </li>
 {{/each}}
+  <li class="directory">
+    <div class="directory-logo"><i class="fa fa-sign-out"></i><span>Sign Out</span></div>
+  </li>
